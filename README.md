@@ -2,7 +2,10 @@
 ES6, released in 2015, added many powerful new features to the language. In this repo, I cover these new features, including arrow functions, destructuring, classes, promises, and modules.
 
 
-# Scope
-When you declare a variable with the var keyword, it is declared globally, or locally if declared inside a function.
+# Mutations
+The const declaration has many use cases in modern JavaScript.
 
-The let keyword behaves similarly, but with some extra features. When you declare a variable with the let keyword inside a block, statement, or expression, its scope is limited to that block, statement, or expression.
+Some developers prefer to use const by default when assigning variables, unless they know they will need to reassign the value. They only use let in that case.
+
+It is important to note, however, that objects (including arrays and functions) assigned to variables with const are still mutable. The const declaration only prevents the variable identifier from being reassigned.
+
