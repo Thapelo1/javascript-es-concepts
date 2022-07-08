@@ -8,3 +8,4 @@ The const declaration has many use cases in modern JavaScript.
 Some developers prefer to use const by default when assigning variables, unless they know they will need to reassign the value. They only use let in that case.
 
 It is important to note, however, that objects (including arrays and functions) assigned to variables with const are still mutable. The const declaration only prevents the variable identifier from being reassigned.
+
