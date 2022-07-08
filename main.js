@@ -1,36 +1,17 @@
+
+// ES5
+var magic = function() {
+    return new Date();
+  };
+
+
+  // ES6
+  const magic = () =>  {
+    return new Date();
+  };
+
 /*
-const s = [5, 7, 2];
-
-function editInPlace() {
-
-    // s = [2, 5, 7]; This won't work
-
-  s[0] = 2;
-  s[1] = 5;
-  s[2] = 7;
-
-  return s;
-
-}
-console.log(editInPlace());
-
+When there is no function body and only a return value, you can omit the keyword return as well as the brackets that surround the code using arrow function syntax. This simplifies smaller functions into single-line statements:
 */
 
-
-function freezeObj() {
-    const MATH_CONSTANTS = {
-      PI: 3.14
-    };
-  
-    Object.freeze(MATH_CONSTANTS)
-
-    try {
-      MATH_CONSTANTS.PI = 99;
-    } catch(ex) {
-      console.log(ex);
-    }
-    return MATH_CONSTANTS.PI;
-  }
-  const PI = freezeObj();
-
-  console.log(PI)
+  const magic = () =>  new Date();
