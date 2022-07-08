@@ -9,3 +9,8 @@ Some developers prefer to use const by default when assigning variables, unless 
 
 It is important to note, however, that objects (including arrays and functions) assigned to variables with const are still mutable. The const declaration only prevents the variable identifier from being reassigned.
 
+
+As demonstrated in the first block of code, a const declaration alone will not protect your data from mutation. JavaScript provides the function Object.freeze to prevent data mutation, which ensures that your data does not change.
+
+If the script is in strict mode, any attempt to change the object will be rejected, with an error thrown.
+
